@@ -72,7 +72,7 @@ if (isset($_POST['Email'])) {
         'Reply-To: ' . $email_to . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
-    ini_set('smtp_port', 25);
+    // ini_set('smtp_port', 25);
     mail($email_to, $email_message, $headers);
 ?>
 
