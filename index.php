@@ -62,10 +62,15 @@ if (isset($_POST['Email'])) {
         return str_replace($bad, "", $string);
     }
 
-    $email_message .= "Name: " . clean_string($name) . "\n";
-    $email_message .= "Email: " . clean_string($email) . "\n";
-    $email_message .= "Subject: " . clean_string($subject) . "\n";
-    $email_message .= "Message: " . clean_string($message) . "\n";
+    // $email_message .= "Name: " . clean_string($name) . "\n";
+    // $email_message .= "Email: " . clean_string($email) . "\n";
+    // $email_message .= "Subject: " . clean_string($subject) . "\n";
+    // $email_message .= "Message: " . clean_string($message) . "\n";
+
+    $email_body =   'User Name: $name.\n'.
+                    'User Email: $email.\n'.
+                    'User Subject: $subject.\n'.
+                    'User Message: $message.\n';
 
     // create email headers
     $headers = 'From: ' . $email . "\r\n" .
@@ -73,7 +78,7 @@ if (isset($_POST['Email'])) {
         'X-Mailer: PHP/' . phpversion();
 
     // ini_set('smtp_port', 25);
-    mail($email_to, $email_message, $headers);
+    mail($email_to, $email_body, $headers);
 ?>
 
     <!-- include your success message below -->
