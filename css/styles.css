@@ -295,6 +295,7 @@ section .title::after {
 
 .about .about-content .right .text p {
   text-align: justify;
+  line-height: 25px;
 }
 
 .about .about-content .right a {
@@ -380,6 +381,15 @@ section .title::after {
 
 /* ----- SKILLS ----- */
 
+.text-date {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.text-title {
+  font-weight: 600;
+}
+
 .skills .title::before {
   width: 160px;
 }
@@ -400,6 +410,7 @@ section .title::after {
 
 .skills .skills-content .left p {
   text-align: justify;
+  line-height: 20px;
 }
 
 .skills .skills-content .left a {
@@ -441,6 +452,7 @@ section .title::after {
   background: lightblue;
   position: relative;
 }
+
 .skills .skills-content .right .line::before {
   content: '';
   position: absolute;
