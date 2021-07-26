@@ -350,7 +350,7 @@ section .title::after {
 .projects .glide .card {
   background: #222;
   border-radius: 10px;
-  padding: 25px 35px;
+  padding: 20px 35px;
   text-align: center;
   height: 300px;
   max-width: 300px;
@@ -367,14 +367,18 @@ section .title::after {
 }
 
 .projects .glide .card .text {
+  color: #fff;
   font-size: 25px;
   font-weight: 500;
   padding: 10px 0 7px 0;
 }
 
+.projects .glide .card p {
+  color: #fff;
+}
+
 .projects .glide .card .text:last-child {
   font-size: 22px;
-  color: #fff;
 }
 
 .projects .glide .card img {
