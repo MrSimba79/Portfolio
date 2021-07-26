@@ -477,8 +477,14 @@ section .title::after {
 .skills .skills-content .right .mysql::before {
   width: 30%;
 }
+.skills .skills-content .right .mongodb::before {
+  width: 10%;
+}
 .skills .skills-content .right .node::before {
   width: 20%;
+}
+.skills .skills-content .right .php::before {
+  width: 10%;
 }
 
 /* ----- CONTACT ----- */
