@@ -38,6 +38,13 @@
   width: 100px;
 }
 
+.ico-under-construction {
+  padding-top: 30px;
+  margin-bottom: 50px;
+  content: url('../Assets/icons/under-construction.svg');
+  width: 100px;
+}
+
 .ico-user {
   content: url('../Assets/icons/user.svg');
   width: 25px;
