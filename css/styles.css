@@ -1,7 +1,14 @@
 /* ----- FONT ----- */
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+:root {
+  --background-dark: #111;
+  --primary-color: #2e8bc0;
+  --btn-hover-bg: rgba(177, 212, 224, 0.5);
+}
+
 /* ----- SCREEN ----- */
+
 .max-width {
   max-width: 1500px;
   padding: 0 80px;
@@ -122,7 +129,7 @@ section .title::before {
   bottom: 0px;
   width: 180px;
   height: 3px;
-  background: #111;
+  background: var(--background-dark);
 }
 
 section .title::after {
@@ -130,7 +137,7 @@ section .title::after {
   bottom: -12px;
   left: 50%;
   font-size: 20px;
-  color: crimson;
+  color: var(--primary-color);
   padding: 5px;
   background: #fff;
   transform: translateX(-50%);
@@ -152,7 +159,7 @@ section .title::after {
 }
 
 .navbar.sticky .logo a span {
-  color: crimson;
+  color: var(--primary-color);
   transition: color 0.3 ease;
 }
 .navbar.sticky .logo a {
@@ -199,7 +206,7 @@ section .title::after {
 }
 
 .navbar.sticky .menu li a:hover {
-  color: crimson;
+  color: var(--primary-color);
 }
 
 /* ----- menu btn ----- */
@@ -213,7 +220,7 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: crimson;
+  background: var(--primary-color);
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -264,25 +271,25 @@ section .title::after {
 }
 
 .home .home-content .text-3 span {
-  color: crimson;
+  color: var(--primary-color);
 }
 
 .home .home-content a {
   display: inline-block;
-  background: crimson;
+  background: var(--primary-color);
   color: #eeebe8;
   font-size: 25px;
   font-weight: 800;
   padding: 12px 36px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid crimson;
+  border: 2px solid var(--primary-color);
   transition: all 0.3s ease;
 }
 
 .home .home-content a:hover {
   color: rgba(27, 42, 55);
-  background: rgba(220, 20, 60, 0.2);
+  background: var(--btn-hover-bg);
 }
 
 /* ----- ABOUT ----- */
@@ -317,20 +324,20 @@ section .title::after {
 
 .about .about-content .right a {
   display: inline-block;
-  background: crimson;
+  background: var(--primary-color);
   color: #eeebe8;
   font-weight: 500px;
   font-size: 20px;
   padding: 8px 30px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid crimson;
+  border: 2px solid var(--primary-color);
   transition: all 0.3s ease;
 }
 
 .about .about-content .right a:hover {
   color: rgba(27, 42, 55);
-  background: rgba(220, 20, 60, 0.2);
+  background: var(--btn-hover-bg);
 }
 
 /* ----- PROJECTS ----- */
@@ -338,16 +345,17 @@ section .title::after {
 .projects,
 .contact {
   color: #fff;
-  background-color: #111;
+  background-color: var(--background-dark);
 }
 
 .projects .title::before {
   background: #fff;
+  border-radius: 10px;
   width: 220px;
 }
 
 .projects .title::after {
-  background: #111;
+  background: var(--background-dark);
   content: 'My work';
 }
 .projects .glide {
@@ -393,7 +401,7 @@ section .title::after {
   width: 200px;
   object-fit: cover;
   border-radius: 6px;
-  border: 2px solid crimson;
+  border: 2px solid var(--primary-color);
 }
 
 .projects .glide .card img:last-child {
@@ -436,20 +444,20 @@ section .title::after {
 
 .skills .skills-content .left a {
   display: inline-block;
-  background: crimson;
+  background: var(--primary-color);
   color: #eeebe8;
   font-weight: 500px;
   font-size: 18px;
   padding: 8px 16px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid crimson;
+  border: 2px solid var(--primary-color);
   transition: all 0.3s ease;
 }
 
 .skills .skills-content .left a:hover {
   color: rgba(27, 42, 55);
-  background: rgba(220, 20, 60, 0.2);
+  background: var(--btn-hover-bg);
 }
 
 .skills .skills-content .right .bars {
@@ -480,7 +488,8 @@ section .title::after {
   height: 100%;
   left: 0;
   top: 0%;
-  background: crimson;
+  border-radius: 0 10px 10px 0;
+  background: var(--primary-color);
 }
 
 .skills .skills-content .right .html::before {
@@ -518,7 +527,7 @@ section .title::after {
   width: 215px;
 }
 .contact .title::after {
-  background: #111;
+  background: var(--background-dark);
   content: 'Get in touch';
 }
 
@@ -575,7 +584,7 @@ footer span {
 }
 
 footer span a {
-  color: crimson;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -643,7 +652,7 @@ footer span a:hover {
   }
 
   .navbar .menu li a:hover {
-    color: crimson;
+    color: var(--primary-color);
   }
 
   .off {
