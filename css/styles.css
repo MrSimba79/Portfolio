@@ -315,9 +315,11 @@ section .title::after {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
+  text-align: justify;
 }
 
-.about .about-content .right .text p {
+.about .about-content .right .text .para {
+  white-space: pre-wrap;
   text-align: justify;
   line-height: 25px;
 }
@@ -397,11 +399,23 @@ section .title::after {
 }
 
 .projects .glide .card img {
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   object-fit: cover;
   border-radius: 6px;
-  border: 2px solid var(--primary-color);
+  margin-top: 10px;
+  /* border: 2px solid var(--primary-color); */
+
+  -webkit-transition: -webkit-transform 400ms ease-out;
+  transition: -webkit-transform 400ms ease-out;
+  transition: transform 400ms ease-out;
+  transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
+
+}
+
+.projects .glide .card img:hover {
+	-webkit-transform: scale(1.05);
+	        transform: scale(1.05);
 }
 
 .projects .glide .card img:last-child {
@@ -493,30 +507,30 @@ section .title::after {
 }
 
 .skills .skills-content .right .html::before {
-  width: 80%;
+  width: 90%;
 }
 .skills .skills-content .right .css::before {
-  width: 70%;
+  width: 80%;
 }
 .skills .skills-content .right .js::before {
   width: 60%;
 }
 .skills .skills-content .right .react::before {
+  width: 60%;
+}
+.skills .skills-content .right .redux::before {
+  width: 50%;
+}
+.skills .skills-content .right .git::before {
+  width: 70%;
+}
+.skills .skills-content .right .rtl::before {
   width: 30%;
 }
-.skills .skills-content .right .mysql::before {
+.skills .skills-content .right .enzyme::before {
   width: 30%;
 }
-.skills .skills-content .right .angular::before {
-  width: 10%;
-}
-.skills .skills-content .right .mongodb::before {
-  width: 10%;
-}
-.skills .skills-content .right .node::before {
-  width: 20%;
-}
-.skills .skills-content .right .php::before {
+.skills .skills-content .right .jest::before {
   width: 10%;
 }
 
